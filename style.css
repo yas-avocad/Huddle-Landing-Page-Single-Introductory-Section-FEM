@@ -87,6 +87,7 @@ button {
   background-color: white;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, .269);
   margin-bottom: 63px;
+  transition: background-color .15s, color .15s;
 }
 
 button:active,
@@ -116,9 +117,11 @@ footer {
   fill-opacity: red;
   cursor: pointer;
   filter: invert(100%) sepia(0%) saturate(7490%) hue-rotate(183deg) brightness(91%) contrast(111%);
+  transition: filter .15s;
 }
 
-.social-icon:hover {
+.social-icon:hover,
+.social-icon:active {
   filter: invert(44%) sepia(97%) saturate(1414%) hue-rotate(294deg) brightness(102%) contrast(101%);
 }
 
